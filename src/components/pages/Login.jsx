@@ -15,7 +15,7 @@ const authentication = e => {
       localStorage.setItem('token',r.data.token)
     })
     .catch(
-      e => console.log(e)
+      alert('Error trying to log in')
     )
 }
 const Login = () => (

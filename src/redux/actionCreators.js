@@ -28,7 +28,7 @@ export const getAllCourses = () => dispatch => {
   .then(response=> {
     return dispatch({
       type: GET_ALL_COURSES,
-      posts: response.data
+      courses: response.data
     })
   })
 }
@@ -38,7 +38,7 @@ export const getAllTeachers = () => dispatch => {
   .then(response=> {
     return dispatch({
       type: GET_ALL_TEACHERS,
-      posts: response.data
+      teachers: response.data
     })
   })
 }
@@ -49,7 +49,7 @@ export const getPost = id => dispatch => {
   .then(response=> {
     return dispatch({
       type: GET_POST,
-      posts: response.data
+      post: response.data
     })
   })
 }
@@ -60,7 +60,7 @@ export const getFragment = id => dispatch => {
   .then(response=> {
     return dispatch({
       type: GET_FRAGMENT,
-      posts: response.data
+      fragment: response.data
     })
   })
 }
@@ -70,7 +70,7 @@ export const getCourse = id => dispatch => {
   .then(response=> {
     return dispatch({
       type: GET_COURSE,
-      posts: response.data
+      course: response.data
     })
   })
 }
@@ -80,7 +80,7 @@ export const getSpeciality = id => dispatch => {
   .then(response=> {
     return dispatch({
       type: GET_SPECIALITY,
-      posts: response.data
+      speciality: response.data
     })
   })
 }

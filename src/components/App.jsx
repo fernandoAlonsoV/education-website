@@ -12,18 +12,18 @@ import Protected from './routes/Protected'
 import Public from './routes/Public'
 import Login from './pages/Login'
 import SignIn from './pages/SignIn'
-import Header from './organisms/header'
+import Header from './organisms/Header'
 const App = () => (
   <Router>
     <Header />
     <Switch>
       <Protected path="/" exact component={Home}/>
-      <Protected path="/specialities"  component={Specialities}/>
-      <Protected path="/specialities/:id"  component={Speciality}/>
-      <Protected path="/courses"  component={Courses}/>
-      <Protected path="/courses/:id"  component={Course}/>
-      <Protected path="/teachers"  component={Teachers}/>
-      <Protected path="/class/:id"  component={Fragment}/>
+      <Protected path="/specialities" exact component={Specialities}/>
+      <Protected path="/specialities/:id" exact component={Speciality}/>
+      <Protected path="/courses" exact component={Courses}/>
+      <Protected path="/course/:id" exact component={Course}/>
+      <Protected path="/teachers" exact component={Teachers}/>
+      <Protected path="/class/:id" exact component={Fragment}/>
 
       <Public path="/login"  component={Login}/>
       <Public path="/signin"  component={SignIn}/>
