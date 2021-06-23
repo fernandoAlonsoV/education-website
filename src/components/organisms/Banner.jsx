@@ -15,7 +15,7 @@ const Banner = ({color, image, title, subtitle, home, poster, courseBanner, spec
                 {subtitle}
               </p>
               <Link to="/courses" className="button second-color">
-                Ver cursos
+                Go to courses
               </Link>
             </div>
             <div className="img-container s-ratio-16-9">

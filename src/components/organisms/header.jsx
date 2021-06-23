@@ -12,7 +12,7 @@ const Header = () => (
       <div className="s-cols-4 lg-cols-1 s-cross-center">
         <NavLink to="/">
           <img 
-          src="https://ed.team/static/images/logo/logo-alt.svg" 
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/American_Broadcasting_Company_Logo.svg/2044px-American_Broadcasting_Company_Logo.svg.png" 
           alt="logo" className="main-logo" />
         </NavLink>        
       </div>
