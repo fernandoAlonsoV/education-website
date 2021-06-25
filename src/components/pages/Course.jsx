@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import {connect} from 'react-redux'
 import store from '../../redux/store'
 import {getCourse} from '../../redux/actionCreators'
+import {Link} from 'react-router-dom'
 const Course = ({course}) => {
 
   useEffect(()=>{
@@ -37,9 +38,13 @@ const Course = ({course}) => {
                     <div className="course-class l-section" key={cl.class.id}>
                       <h3>{cl.class.title}</h3>
                       <p>{cl.class.description}</p>
-                      <ul>{
+                      <ul className="data-list">{
                       cl.subjects.map(s=>(
-                        <li key={s.subject.id}>{s.subject.title}</li>
+                        <li key={s.subject.id}>
+                          <Link to={`/class/${s.subject.id}`} className="color dark-color">
+                            {s.subject.title}
+                          </Link>
+                        </li>
                         ))
                       }</ul>
                     </div>
